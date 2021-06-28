@@ -2,10 +2,10 @@
 <html>
 
 <head>
-  <!-- Basic border-radius:50%;
-overflow:hidden;
-slider-img
--->
+  <!-- Basic -->
+  <style type="text/css">
+    p{ text-indent:2em;}
+  </style>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
@@ -16,16 +16,16 @@ slider-img
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Home </title>
+  <title> Experience </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
 
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
@@ -34,14 +34,10 @@ slider-img
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-<style type="text/css">
-  /*#headJpg{border-radius:50%;}*/
-  p{ text-indent:2em;}
-}
-</style>
+
 </head>
 
-<body>
+<body class="sub_page">
 
   <div class="hero_area">
 
@@ -65,14 +61,14 @@ slider-img
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html"> About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Experience</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="service.html">Experience <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -88,46 +84,118 @@ slider-img
       </div>
     </header>
     <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      吴 东 海
-                    </h1>
-                    <p>
-                      熟悉Spring，Django框架，参与设计与开发过多个项目，负责系统核心模块的开发，数据库配置与部属，熟悉HTTP
-                      协议，TCP/IP协议，正则表达式，了解Redis，MySql数据库与linux系统的常见机制与原理，
-                      有一定系统的架构设计和开发经验，拥抱新技术，有很强的学习能力。是学校 ACM 实验室，卓越计划成员，
-                      具有扎实的计算机理论基础，良好的算法与数据结构基础，了解计算机基本原理与常见机制。
-                      有优秀的学习能力和团队沟通能力，经常与团队进行技术分享，能与团队共同成长。
-                    </p>
-                    <div class="btn-box">
-                      <a href="myMessage.html" class="btn1">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/head.jpg" alt="" >
-                  </div>
-                </div>
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            My <span>Experience</span>
+          </h2>
+          <p>
+            This page is mainly used to display some of the projects I made myself
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  小区物业管理系统
+                </h5>
+                <p>
+                  使用Idea开发小区物业管理系统，负责构建数据库连接池与线程池，登录注册模块，
+                  数据库连接与前后端连接，Web 后端开发，服务器配置，SqlServer 服务器搭建。
+                  数据的清洗与存储数据到 SqlServer 数据库，通过日志分析定位慢查询，
+                  通过添加联合索引减少了 50% 数据库查询时间。
+                </p>
+
+                <a href="">
+                  <!--Read More-->
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  手机视频直播平台
+                </h5>
+                <p>
+                  使用Android Studio开发手机视频直播平台，
+                  基于 Flask 服务器 + Nginx反向代理 + SqlServer数据库 + Android客户端的 Web 开发,
+                  主要工作内容腾讯云SDK拉流与推流，安卓页面登录注册处理，
+                  服务器配置与部署，SqlServer 数据库与安卓程序与后端连接，Web后端业务开发。
+                </p>
+                <a href="">
+                  <!--Read More-->
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  车牌识别
+                </h5>
+                <p>
+                  python+OpenCV+CNN
+                  主要内容图像预处理 ，车牌定位、 车牌过滤、 字符分割 、字符识别。
+                </p>
+                <a href="">
+                  <!--Read More-->
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s4.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  三维网格模型的曲率计算以及分析探究
+                </h5>
+                <p>
+                  计算三维模型的各种曲率值，高斯曲率，平均曲率，主曲率。使三维模型的曲率值
+                  与三维模型表面颜色进行挂钩，对三维模型进行预处理（简化与细化），利用计算
+                  出的曲率值对三维模型进行分割。
+                </p>
+                <a href="">
+                  <!--Read More-->
+                </a>
               </div>
             </div>
           </div>
         </div>
+        <div class="btn-box">
+          <a href="project/message.pdf">
+            See All
+          </a>
+        </div>
       </div>
+    </div>
+  </section>
 
-    </section>
-    <!-- end slider section -->
-  </div>
+  <!-- end service section -->
+
+  <!-- footer section -->
   <footer class="footer_section">
     <div class="footer_bg_box">
       <img src="images/footer-bg.png" alt="">
@@ -164,7 +232,7 @@ slider-img
                   Call +86 18212422521
                 </span>
               </a>
-              <a href="https://myaccount.google.com/?hl=zh_CN">
+              <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
                   gzdonghaiwu@gmail.com
@@ -222,8 +290,8 @@ slider-img
           <h4>
             Subscribe
           </h4>
-          <form action="MAILTO:gzdonghaiwu@gmail.com" method="post" enctype="text/plain">
-            <input type="text" placeholder="Enter email" />
+          <form action="#">
+            <input type="text" placeholder="Enter email"/>
             <button type="submit">
               Subscribe
             </button>
@@ -245,13 +313,15 @@ slider-img
   <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <!-- owl slider -->
-  <script src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js">
+  </script>
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
-  <!---<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">--->
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
   <!-- End Google Map -->
+
 </body>
 
 </html>
